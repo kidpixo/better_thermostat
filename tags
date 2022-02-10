@@ -1,0 +1,166 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/kidpixo/Downloads/github_cloned/better_thermostat/	//
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+Motivation:	.github/pull_request_template.md	/^## Motivation:$/;"	s
+Changes:	.github/pull_request_template.md	/^## Changes:$/;"	s
+Related issue (check one):	.github/pull_request_template.md	/^## Related issue (check one):$/;"	s
+Checklist (check one):	.github/pull_request_template.md	/^## Checklist (check one):$/;"	s
+Test-Hardware list (for code changes)	.github/pull_request_template.md	/^## Test-Hardware list (for code changes)$/;"	s
+New device mappings	.github/pull_request_template.md	/^## New device mappings$/;"	s
+Prerequisites	.github/ISSUE_TEMPLATE/bug_report.md	/^### Prerequisites$/;"	S
+Description	.github/ISSUE_TEMPLATE/bug_report.md	/^### Description$/;"	S
+Steps to Reproduce	.github/ISSUE_TEMPLATE/bug_report.md	/^### Steps to Reproduce$/;"	S
+Versions	.github/ISSUE_TEMPLATE/bug_report.md	/^### Versions$/;"	S
+Additional Information	.github/ISSUE_TEMPLATE/bug_report.md	/^### Additional Information$/;"	S
+Better Thermostat	README.md	/^# Better Thermostat$/;"	c
+Requirements	README.md	/^### Requirements$/;"	S	chapter:Better Thermostat
+Companion UI	README.md	/^### Companion UI$/;"	S	chapter:Better Thermostat
+Featureset	README.md	/^### Featureset$/;"	S	chapter:Better Thermostat
+Which hardware do we support?	README.md	/^### Which hardware do we support?$/;"	S	chapter:Better Thermostat
+Howto Setup	README.md	/^### Howto Setup$/;"	S	chapter:Better Thermostat
+Example Window/Door - Sensor config	README.md	/^### Example Window\/Door - Sensor config$/;"	S	chapter:Better Thermostat
+Combine multiple TRV to one	README.md	/^### Combine multiple TRV to one$/;"	S	chapter:Better Thermostat
+Zigbee2Mqtt config requirements	README.md	/^### Zigbee2Mqtt config requirements$/;"	S	chapter:Better Thermostat
+☕ Supporters	README.md	/^## ☕ Supporters$/;"	s	chapter:Better Thermostat
+Maintainers	README.md	/^# Maintainers$/;"	c
+‎‍💻 Code Contributors	README.md	/^## ‎‍💻 Code Contributors$/;"	s	chapter:Maintainers
+name	hacs.json	/^  "name": "Better Thermostat",$/;"	s
+render_readme	hacs.json	/^  "render_readme": true,$/;"	b
+0	hacs.json	/^    "climate"$/;"	s	array:domains
+domains	hacs.json	/^  "domains": [$/;"	a
+iot_class	hacs.json	/^  "iot_class": "Local Push",$/;"	s
+homeassistant	hacs.json	/^  "homeassistant": "2021.12.0"$/;"	s
+mode_remap	custom_components/better_thermostat/models/utils.py	/^def mode_remap(hvac_mode, modes):$/;"	f
+reverse_modes	custom_components/better_thermostat/models/utils.py	/^def reverse_modes(modes):$/;"	f
+calibration	custom_components/better_thermostat/models/utils.py	/^def calibration(self, calibration_type):$/;"	f
+default_calibration	custom_components/better_thermostat/models/utils.py	/^def default_calibration(self):$/;"	f
+temperature_calibration	custom_components/better_thermostat/models/utils.py	/^def temperature_calibration(self):$/;"	f
+convert_decimal	custom_components/better_thermostat/models/utils.py	/^def convert_decimal(decimal_string):$/;"	f
+dr	custom_components/better_thermostat/models/models.py	/^from homeassistant.helpers import device_registry as dr, entity_registry as er$/;"	x	nameref:unknown:device_registry
+er	custom_components/better_thermostat/models/models.py	/^from homeassistant.helpers import device_registry as dr, entity_registry as er$/;"	x	nameref:unknown:entity_registry
+_LOGGER	custom_components/better_thermostat/models/models.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+convert_inbound_states	custom_components/better_thermostat/models/models.py	/^def convert_inbound_states(self, state):$/;"	f
+get_device_model	custom_components/better_thermostat/models/models.py	/^async def get_device_model(self):$/;"	f
+convert_outbound_states	custom_components/better_thermostat/models/models.py	/^def convert_outbound_states(self, hvac_mode):$/;"	f
+cv	custom_components/better_thermostat/climate.py	/^import homeassistant.helpers.config_validation as cv$/;"	I	nameref:module:homeassistant.helpers.config_validation
+dt_util	custom_components/better_thermostat/climate.py	/^import homeassistant.util.dt as dt_util$/;"	I	nameref:module:homeassistant.util.dt
+vol	custom_components/better_thermostat/climate.py	/^import voluptuous as vol$/;"	I	nameref:module:voluptuous
+_LOGGER	custom_components/better_thermostat/climate.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+PLATFORM_SCHEMA	custom_components/better_thermostat/climate.py	/^PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend($/;"	v
+async_setup_platform	custom_components/better_thermostat/climate.py	/^async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):$/;"	f
+BetterThermostat	custom_components/better_thermostat/climate.py	/^class BetterThermostat(ClimateEntity, RestoreEntity, ABC):$/;"	c
+__init__	custom_components/better_thermostat/climate.py	/^	def __init__($/;"	m	class:BetterThermostat
+async_added_to_hass	custom_components/better_thermostat/climate.py	/^	async def async_added_to_hass(self):$/;"	m	class:BetterThermostat
+_async_startup	custom_components/better_thermostat/climate.py	/^		def _async_startup(*_):$/;"	f	member:BetterThermostat.async_added_to_hass	file:
+_trigger_temperature_change	custom_components/better_thermostat/climate.py	/^	async def _trigger_temperature_change(self,event):$/;"	m	class:BetterThermostat
+_trigger_trv_change	custom_components/better_thermostat/climate.py	/^	async def _trigger_trv_change(self,event):$/;"	m	class:BetterThermostat
+_trigger_window_change	custom_components/better_thermostat/climate.py	/^	async def _trigger_window_change(self,event):$/;"	m	class:BetterThermostat
+extra_state_attributes	custom_components/better_thermostat/climate.py	/^	def extra_state_attributes(self):$/;"	m	class:BetterThermostat
+available	custom_components/better_thermostat/climate.py	/^	def available(self):$/;"	m	class:BetterThermostat
+should_poll	custom_components/better_thermostat/climate.py	/^	def should_poll(self):$/;"	m	class:BetterThermostat
+name	custom_components/better_thermostat/climate.py	/^	def name(self):$/;"	m	class:BetterThermostat
+unique_id	custom_components/better_thermostat/climate.py	/^	def unique_id(self):$/;"	m	class:BetterThermostat
+precision	custom_components/better_thermostat/climate.py	/^	def precision(self):$/;"	m	class:BetterThermostat
+target_temperature_step	custom_components/better_thermostat/climate.py	/^	def target_temperature_step(self):$/;"	m	class:BetterThermostat
+temperature_unit	custom_components/better_thermostat/climate.py	/^	def temperature_unit(self):$/;"	m	class:BetterThermostat
+current_temperature	custom_components/better_thermostat/climate.py	/^	def current_temperature(self):$/;"	m	class:BetterThermostat
+hvac_mode	custom_components/better_thermostat/climate.py	/^	def hvac_mode(self):$/;"	m	class:BetterThermostat
+hvac_action	custom_components/better_thermostat/climate.py	/^	def hvac_action(self):$/;"	m	class:BetterThermostat
+target_temperature	custom_components/better_thermostat/climate.py	/^	def target_temperature(self):$/;"	m	class:BetterThermostat
+hvac_modes	custom_components/better_thermostat/climate.py	/^	def hvac_modes(self):$/;"	m	class:BetterThermostat
+async_set_hvac_mode	custom_components/better_thermostat/climate.py	/^	async def async_set_hvac_mode(self, hvac_mode):$/;"	m	class:BetterThermostat
+async_set_temperature	custom_components/better_thermostat/climate.py	/^	async def async_set_temperature(self, **kwargs):$/;"	m	class:BetterThermostat
+min_temp	custom_components/better_thermostat/climate.py	/^	def min_temp(self):$/;"	m	class:BetterThermostat
+max_temp	custom_components/better_thermostat/climate.py	/^	def max_temp(self):$/;"	m	class:BetterThermostat
+_is_device_active	custom_components/better_thermostat/climate.py	/^	def _is_device_active(self):$/;"	m	class:BetterThermostat
+supported_features	custom_components/better_thermostat/climate.py	/^	def supported_features(self):$/;"	m	class:BetterThermostat
+_LOGGER	custom_components/better_thermostat/controlling.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+control_trv	custom_components/better_thermostat/controlling.py	/^async def control_trv(self):$/;"	f
+check_window_state	custom_components/better_thermostat/controlling.py	/^async def check_window_state(self):$/;"	f
+check_summer_state	custom_components/better_thermostat/controlling.py	/^async def check_summer_state(self):$/;"	f
+set_target_temperature	custom_components/better_thermostat/controlling.py	/^async def set_target_temperature(self, **kwargs):$/;"	f
+set_hvac_mode	custom_components/better_thermostat/controlling.py	/^async def set_hvac_mode(self, hvac_mode):$/;"	f
+change_hvac_mode	custom_components/better_thermostat/controlling.py	/^async def change_hvac_mode(self,hvac_mode):$/;"	f
+change_target_temperature	custom_components/better_thermostat/controlling.py	/^async def change_target_temperature(self,target_temp):$/;"	f
+change_local_calibration	custom_components/better_thermostat/controlling.py	/^async def change_local_calibration(self, calibration):$/;"	f
+set_trv_values	custom_components/better_thermostat/controlling.py	/^async def set_trv_values(self, key, value):$/;"	f
+trv_valve_maintenance	custom_components/better_thermostat/controlling.py	/^async def trv_valve_maintenance(self):$/;"	f
+_LOGGER	custom_components/better_thermostat/const.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+DEFAULT_NAME	custom_components/better_thermostat/const.py	/^DEFAULT_NAME = "Better Thermostat"$/;"	v
+VERSION	custom_components/better_thermostat/const.py	/^VERSION = "master"$/;"	v
+manifest	custom_components/better_thermostat/const.py	/^		manifest = json.load(manifest_file)$/;"	v
+VERSION	custom_components/better_thermostat/const.py	/^		VERSION = manifest["version"]$/;"	v
+CONF_HEATER	custom_components/better_thermostat/const.py	/^CONF_HEATER = "thermostat"$/;"	v
+CONF_SENSOR	custom_components/better_thermostat/const.py	/^CONF_SENSOR = "temperature_sensor"$/;"	v
+CONF_SENSOR_WINDOW	custom_components/better_thermostat/const.py	/^CONF_SENSOR_WINDOW = "window_sensors"$/;"	v
+CONF_TARGET_TEMP	custom_components/better_thermostat/const.py	/^CONF_TARGET_TEMP = "target_temp"$/;"	v
+CONF_WEATHER	custom_components/better_thermostat/const.py	/^CONF_WEATHER = "weather"$/;"	v
+CONF_OFF_TEMPERATURE	custom_components/better_thermostat/const.py	/^CONF_OFF_TEMPERATURE = "off_temperature"$/;"	v
+CONF_WINDOW_TIMEOUT	custom_components/better_thermostat/const.py	/^CONF_WINDOW_TIMEOUT = "window_off_delay"$/;"	v
+CONF_OUTDOOR_SENSOR	custom_components/better_thermostat/const.py	/^CONF_OUTDOOR_SENSOR = "outdoor_sensor"$/;"	v
+CONF_VALVE_MAINTENANCE	custom_components/better_thermostat/const.py	/^CONF_VALVE_MAINTENANCE = "valve_maintenance"$/;"	v
+CONF_NIGHT_TEMP	custom_components/better_thermostat/const.py	/^CONF_NIGHT_TEMP = "night_temp"$/;"	v
+CONF_NIGHT_START	custom_components/better_thermostat/const.py	/^CONF_NIGHT_START = "night_start"$/;"	v
+CONF_NIGHT_END	custom_components/better_thermostat/const.py	/^CONF_NIGHT_END = "night_end"$/;"	v
+CONF_MIN_TEMP	custom_components/better_thermostat/const.py	/^CONF_MIN_TEMP = "min_temp"$/;"	v
+CONF_MAX_TEMP	custom_components/better_thermostat/const.py	/^CONF_MAX_TEMP = "max_temp"$/;"	v
+CONF_PRECISION	custom_components/better_thermostat/const.py	/^CONF_PRECISION = "precision"$/;"	v
+SUPPORT_FLAGS	custom_components/better_thermostat/const.py	/^SUPPORT_FLAGS = SUPPORT_TARGET_TEMPERATURE$/;"	v
+ATTR_STATE_WINDOW_OPEN	custom_components/better_thermostat/const.py	/^ATTR_STATE_WINDOW_OPEN = "window_open"$/;"	v
+ATTR_STATE_NIGHT_MODE	custom_components/better_thermostat/const.py	/^ATTR_STATE_NIGHT_MODE = "night_mode"$/;"	v
+ATTR_STATE_CALL_FOR_HEAT	custom_components/better_thermostat/const.py	/^ATTR_STATE_CALL_FOR_HEAT = "call_for_heat"$/;"	v
+ATTR_STATE_LAST_CHANGE	custom_components/better_thermostat/const.py	/^ATTR_STATE_LAST_CHANGE = "last_change"$/;"	v
+ATTR_STATE_DAY_SET_TEMP	custom_components/better_thermostat/const.py	/^ATTR_STATE_DAY_SET_TEMP = "last_day_set_temp"$/;"	v
+ATTR_VALVE_POSITION	custom_components/better_thermostat/const.py	/^ATTR_VALVE_POSITION = "valve_position"/;"	v
+DOMAIN	custom_components/better_thermostat/__init__.py	/^DOMAIN = "better_thermostat"$/;"	v
+PLATFORMS	custom_components/better_thermostat/__init__.py	/^PLATFORMS = [Platform.CLIMATE]$/;"	v
+dt_util	custom_components/better_thermostat/weather.py	/^import homeassistant.util.dt as dt_util$/;"	I	nameref:module:homeassistant.util.dt
+_LOGGER	custom_components/better_thermostat/weather.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+check_weather	custom_components/better_thermostat/weather.py	/^async def check_weather(self):$/;"	f
+check_weather_prediction	custom_components/better_thermostat/weather.py	/^def check_weather_prediction(self):$/;"	f
+check_ambient_air_temperature	custom_components/better_thermostat/weather.py	/^def check_ambient_air_temperature(self):$/;"	f
+_LOGGER	custom_components/better_thermostat/helpers.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+log_info	custom_components/better_thermostat/helpers.py	/^def log_info(self, message):$/;"	f
+startup	custom_components/better_thermostat/helpers.py	/^async def startup(self):$/;"	f
+check_float	custom_components/better_thermostat/helpers.py	/^def check_float(potential_float):$/;"	f
+convert_time	custom_components/better_thermostat/helpers.py	/^def convert_time(time_string):$/;"	f
+domain	custom_components/better_thermostat/manifest.json	/^  "domain": "better_thermostat",$/;"	s
+name	custom_components/better_thermostat/manifest.json	/^  "name": "Better Thermostat",$/;"	s
+documentation	custom_components/better_thermostat/manifest.json	/^  "documentation": "https:\/\/github.com\/KartoffelToby\/better_thermostat",$/;"	s
+issue_tracker	custom_components/better_thermostat/manifest.json	/^  "issue_tracker": "https:\/\/github.com\/KartoffelToby\/better_thermostat\/issues",$/;"	s
+iot_class	custom_components/better_thermostat/manifest.json	/^  "iot_class": "local_push",$/;"	s
+version	custom_components/better_thermostat/manifest.json	/^  "version": "1.0.0-dev",$/;"	s
+0	custom_components/better_thermostat/manifest.json	/^    "sensor",$/;"	s	array:dependencies
+1	custom_components/better_thermostat/manifest.json	/^    "climate",$/;"	s	array:dependencies
+2	custom_components/better_thermostat/manifest.json	/^    "recorder"$/;"	s	array:dependencies
+dependencies	custom_components/better_thermostat/manifest.json	/^  "dependencies": [$/;"	a
+0	custom_components/better_thermostat/manifest.json	/^    "climate",$/;"	s	array:after_dependencies
+1	custom_components/better_thermostat/manifest.json	/^    "sensor"$/;"	s	array:after_dependencies
+after_dependencies	custom_components/better_thermostat/manifest.json	/^  "after_dependencies": [$/;"	a
+0	custom_components/better_thermostat/manifest.json	/^    "@kartoffeltoby",$/;"	s	array:codeowners
+1	custom_components/better_thermostat/manifest.json	/^    "@RubenKelevra"$/;"	s	array:codeowners
+codeowners	custom_components/better_thermostat/manifest.json	/^  "codeowners": [$/;"	a
+requirements	custom_components/better_thermostat/manifest.json	/^  "requirements": []$/;"	a
+_LOGGER	custom_components/better_thermostat/events/trv.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+trigger_trv_change	custom_components/better_thermostat/events/trv.py	/^async def trigger_trv_change(self, event):$/;"	f
+_LOGGER	custom_components/better_thermostat/events/window.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+trigger_window_change	custom_components/better_thermostat/events/window.py	/^async def trigger_window_change(self):$/;"	f
+_LOGGER	custom_components/better_thermostat/events/time.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+trigger_time	custom_components/better_thermostat/events/time.py	/^async def trigger_time(self, current_time):$/;"	f
+_nighttime	custom_components/better_thermostat/events/time.py	/^def _nighttime(self, current_time):$/;"	f
+_LOGGER	custom_components/better_thermostat/events/temperature.py	/^_LOGGER = logging.getLogger(__name__)$/;"	v
+trigger_temperature_change	custom_components/better_thermostat/events/temperature.py	/^async def trigger_temperature_change(self, event):$/;"	f
+_async_update_temp	custom_components/better_thermostat/events/temperature.py	/^def _async_update_temp(self, state):$/;"	f
+Contributing to Better Thermostat	CONTRIBUTING.md	/^# Contributing to Better Thermostat$/;"	c
+How Can I Contribute?	CONTRIBUTING.md	/^## How Can I Contribute?$/;"	s	chapter:Contributing to Better Thermostat
+Reporting Bugs	CONTRIBUTING.md	/^### Reporting Bugs$/;"	S	section:Contributing to Better Thermostat""How Can I Contribute?
+Add a new device "remapping"	CONTRIBUTING.md	/^### Add a new device "remapping"$/;"	S	section:Contributing to Better Thermostat""How Can I Contribute?
+How it works	CONTRIBUTING.md	/^#### How it works$/;"	t	subsection:Contributing to Better Thermostat""How Can I Contribute?""Add a new device "remapping"

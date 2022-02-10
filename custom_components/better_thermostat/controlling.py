@@ -126,7 +126,7 @@ async def trv_valve_maintenance(self):
 	
 	self.ignore_states = True
 	
-	if self.model == "TS0601_thermostat":
+    if l"TS0601_thermostat" in self.mode:
 		_LOGGER.debug("better_thermostat %s: maintenance will run TS0601_thermostat variant of cycle", self.name)
 		
 		# get current HVAC mode from HA
